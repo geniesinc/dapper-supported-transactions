@@ -2,7 +2,7 @@ import FungibleToken from 0x9a0766d93b6608b7
 import NonFungibleToken from 0x631e88ae7f1d7c20
 import DapperUtilityCoin from 0x82ec283f88a62e65
 import NFTStorefront from 0x94b06cfca1d8a476
-import Genies from 0x1a406bdf3437c510
+import Genies from 0xa42ab877d9635cd8
 
 // This transcation can be used to place and NFT for sale on a marketplace such that a specified percentage of the proceeds of the sale
 // go to the dapp as a royalty.
@@ -69,7 +69,7 @@ transaction(saleItemID: UInt64, saleItemPrice: UFix64, royaltyPercent: UFix64) {
 
     // Make sure dapp is actually the dapp and not some random account
     pre {
-        self.dappAddress == 0x1a406bdf3437c510: "Requires valid authorizing signature"
+        self.dappAddress == 0xa42ab877d9635cd8: "Requires valid authorizing signature"
     }
 
     execute {
